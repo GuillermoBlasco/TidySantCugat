@@ -1,0 +1,42 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{chat.name}}">
+  <ion-content class="padding">
+    <ion-list>
+      <ion-item class="item-divider">
+        Informació geogràfica
+      </ion-item>
+      <ion-item>
+        Latitud
+      <span class="item-note">
+        {{chat.latitude}}
+      </span>
+      </ion-item>
+      <ion-item>
+        Longitud
+      <span class="item-note">
+        {{chat.longitude}}
+      </span>
+      </ion-item>
+      <ion-item class="item-divider">
+        Contenidors propers amb alarmes
+      </ion-item>
+      <ion-item>
+        Av Corts Catalanes 13
+      <span class="item-note">
+        complert
+      </span>
+      </ion-item>
+      <ion-item>
+        Av Corts Catalanes 45
+      <span class="item-note">
+        espatllat
+      </span>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
